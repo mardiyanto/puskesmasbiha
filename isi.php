@@ -5,19 +5,6 @@ if($_GET['aksi']=='home'){
     $tebaru=mysqli_query($koneksi," SELECT * FROM berita WHERE id_berita=$_GET[id_berita]");
 $t=mysqli_fetch_array($tebaru);
     echo" 
-    <!-- Header Start -->
-    <div class='container-fluid bg-breadcrumb'>
-        <div class='container text-center py-5' style='max-width: 900px;'>
-            <h3 class='text-white display-3 mb-4 wow fadeInDown' data-wow-delay='0.1s'>$t[judul]</h1>
-            <ol class='breadcrumb justify-content-center text-white mb-0 wow fadeInDown' data-wow-delay='0.3s'>
-                <li class='breadcrumb-item'><a href='index.php' class='text-white'>Home</a></li>
-                <li class='breadcrumb-item'><a href='#' class='text-white'>Pages</a></li>
-                <li class='breadcrumb-item active text-secondary'>$t[judul]</li>
-            </ol>    
-        </div>
-    </div>
-    <!-- Header End -->
-    
     <div class='container-fluid py-5'>
     <div class='container'>
         <div class='row g-5'>
@@ -39,18 +26,7 @@ $t=mysqli_fetch_array($tebaru);
     ";
 }
 elseif($_GET['aksi']=='informasi'){   
-echo" <!-- Header Start -->
-<div class='container-fluid bg-breadcrumb'>
-    <div class='container text-center py-5' style='max-width: 900px;'>
-        <h3 class='text-white display-3 mb-4 wow fadeInDown' data-wow-delay='0.1s'>Informasi</h1>
-        <ol class='breadcrumb justify-content-center text-white mb-0 wow fadeInDown' data-wow-delay='0.3s'>
-            <li class='breadcrumb-item'><a href='index.php' class='text-white'>Home</a></li>
-            <li class='breadcrumb-item'><a href='#' class='text-white'>Pages</a></li>
-            <li class='breadcrumb-item active text-secondary'>Informasi</li>
-        </ol>    
-    </div>
-</div>
-<!-- Header End -->
+echo"
 
 <div class='container-fluid py-5'>
 <div class='container'>
@@ -117,18 +93,7 @@ echo"
 elseif($_GET['aksi']=='detailberita'){   
     $tebaru=mysqli_query($koneksi," SELECT * FROM berita WHERE id_berita=$_GET[id_berita] ");
 $t=mysqli_fetch_array($tebaru);
-    echo"<!-- Header Start -->
-    <div class='container-fluid bg-breadcrumb'>
-        <div class='container text-center py-5' style='max-width: 900px;'>
-            <h3 class='text-white display-3 mb-4 wow fadeInDown' data-wow-delay='0.1s'>Informasi</h1>
-            <ol class='breadcrumb justify-content-center text-white mb-0 wow fadeInDown' data-wow-delay='0.3s'>
-                <li class='breadcrumb-item'><a href='index.php' class='text-white'>Home</a></li>
-                <li class='breadcrumb-item'><a href='#' class='text-white'>Pages</a></li>
-                <li class='breadcrumb-item active text-secondary'>Informasi</li>
-            </ol>    
-        </div>
-    </div>
-    <!-- Header End -->
+    echo"
     <div class='container-fluid py-5'>
     <div class='container'>
         <div class='row g-5'>
@@ -145,18 +110,7 @@ $t=mysqli_fetch_array($tebaru);
     ";
     }
 elseif($_GET['aksi']=='hubungi'){  
-echo"<!-- Header Start -->
-<div class='container-fluid bg-breadcrumb'>
-    <div class='container text-center py-5' style='max-width: 900px;'>
-        <h3 class='text-white display-3 mb-4 wow fadeInDown' data-wow-delay='0.1s'>Hubungi</h1>
-        <ol class='breadcrumb justify-content-center text-white mb-0 wow fadeInDown' data-wow-delay='0.3s'>
-            <li class='breadcrumb-item'><a href='index.php' class='text-white'>Home</a></li>
-            <li class='breadcrumb-item'><a href='#' class='text-white'>Pages</a></li>
-            <li class='breadcrumb-item active text-secondary'>Hubungi</li>
-        </ol>    
-    </div>
-</div>
-<!-- Header End -->
+echo"
 <div class='container-xxl py-5'>
     <div class='container'>
         <div class='row g-5 justify-content-center mb-5'>
@@ -266,18 +220,7 @@ elseif($_GET['aksi']=='inputhubungi'){
     window.location=('index.php')</script>";
 }
 elseif($_GET['aksi']=='galeri'){
-echo"<!-- Header Start -->
-<div class='container-fluid bg-breadcrumb'>
-    <div class='container text-center py-5' style='max-width: 900px;'>
-        <h3 class='text-white display-3 mb-4 wow fadeInDown' data-wow-delay='0.1s'>Galeri</h1>
-        <ol class='breadcrumb justify-content-center text-white mb-0 wow fadeInDown' data-wow-delay='0.3s'>
-            <li class='breadcrumb-item'><a href='index.php' class='text-white'>Home</a></li>
-            <li class='breadcrumb-item'><a href='#' class='text-white'>Pages</a></li>
-            <li class='breadcrumb-item active text-secondary'>Galeri</li>
-        </ol>    
-    </div>
-</div>
-<!-- Header End -->
+echo"
 <!-- Projects Start -->
 <div class='container-fluid blog pb-5'>
 <div class='container pb-5'>
